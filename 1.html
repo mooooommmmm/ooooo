@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>分頁範例</title>
+    <style>
+        .tab {
+            display: none;
+        }
+    </style>
+    <script>
+        function openTab(tabName) {
+            var i, tabContent;
+            tabContent = document.getElementsByClassName("tab");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <h1>分頁示例</h1>
+    <div>
+        <button onclick="openTab('tab1')">分頁1</button>
+        <button onclick="openTab('tab2')">分頁2</button>
+        <button onclick="openTab('tab3')">分頁3</button>
+        <button onclick="openTab('tab4')">分頁4</button>
+    </div>
+    
+    <div id="tab1" class="tab">
+        <h2>分頁1</h2>
+        <p>這是第一個分頁的內容。</p>
+    </div>
+    
+    <div id="tab2" class="tab">
+        <h2>分頁2</h2>
+        <p>這是第二個分頁的內容。</p>
+    </div>
+    
+    <div id="tab3" class="tab">
+        <h2>分頁3</h2>
+        <p>這是第三個分頁的內容。</p>
+    </div>
+    
+    <div id="tab4" class="tab">
+        <h2>分頁4</h2>
+        <p>這是第四個分頁的內容。</p>
+    </div>
+</body>
+</html>
